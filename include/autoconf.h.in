@@ -699,6 +699,9 @@
 /* Define to 1 if you have the <openssl/bio.h> header file. */
 #undef HAVE_OPENSSL_BIO_H
 
+/* Define to 1 if you have the <openssl/crypto.h> header file. */
+#undef HAVE_OPENSSL_CRYPTO_H
+
 /* Define to 1 if you have the <openssl/engine.h> header file. */
 #undef HAVE_OPENSSL_ENGINE_H
 
@@ -1453,7 +1456,7 @@
    code uses API initially defined in 4.4-BSD. */
 #undef USE_SQUID_EUI
 
-/* Use ssl_crtd daemon */
+/* Use ssl-crtd daemon */
 #undef USE_SSL_CRTD
 
 /* Enable extensions on AIX 3, Interix.  */

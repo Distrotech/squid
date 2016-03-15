@@ -96,53 +96,57 @@ am__aclocal_m4_deps = $(top_srcdir)/acinclude/ax_with_prog.m4 \
 	$(top_srcdir)/acinclude/lib-checks.m4 \
 	$(top_srcdir)/acinclude/ax_cxx_compile_stdcxx_11.m4 \
 	$(top_srcdir)/acinclude/ax_cxx_0x_types.m4 \
-	$(top_srcdir)/helpers/basic_auth/modules.m4 \
-	$(top_srcdir)/helpers/basic_auth/DB/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/LDAP/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/NCSA/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/NIS/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/PAM/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/POP3/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/RADIUS/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/SASL/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/SMB/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/SMB_LM/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/SSPI/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/fake/required.m4 \
-	$(top_srcdir)/helpers/basic_auth/getpwnam/required.m4 \
-	$(top_srcdir)/helpers/digest_auth/modules.m4 \
-	$(top_srcdir)/helpers/digest_auth/LDAP/required.m4 \
-	$(top_srcdir)/helpers/digest_auth/eDirectory/required.m4 \
-	$(top_srcdir)/helpers/digest_auth/file/required.m4 \
-	$(top_srcdir)/helpers/negotiate_auth/modules.m4 \
-	$(top_srcdir)/helpers/negotiate_auth/SSPI/required.m4 \
-	$(top_srcdir)/helpers/negotiate_auth/kerberos/required.m4 \
-	$(top_srcdir)/helpers/negotiate_auth/wrapper/required.m4 \
-	$(top_srcdir)/helpers/ntlm_auth/modules.m4 \
-	$(top_srcdir)/helpers/ntlm_auth/fake/required.m4 \
-	$(top_srcdir)/helpers/ntlm_auth/SSPI/required.m4 \
-	$(top_srcdir)/helpers/ntlm_auth/smb_lm/required.m4 \
-	$(top_srcdir)/helpers/log_daemon/modules.m4 \
-	$(top_srcdir)/helpers/log_daemon/DB/required.m4 \
-	$(top_srcdir)/helpers/log_daemon/file/required.m4 \
-	$(top_srcdir)/helpers/external_acl/modules.m4 \
-	$(top_srcdir)/helpers/external_acl/AD_group/required.m4 \
-	$(top_srcdir)/helpers/external_acl/LDAP_group/required.m4 \
-	$(top_srcdir)/helpers/external_acl/LM_group/required.m4 \
-	$(top_srcdir)/helpers/external_acl/delayer/required.m4 \
-	$(top_srcdir)/helpers/external_acl/SQL_session/required.m4 \
-	$(top_srcdir)/helpers/external_acl/eDirectory_userip/required.m4 \
-	$(top_srcdir)/helpers/external_acl/file_userip/required.m4 \
-	$(top_srcdir)/helpers/external_acl/kerberos_ldap_group/required.m4 \
-	$(top_srcdir)/helpers/external_acl/session/required.m4 \
-	$(top_srcdir)/helpers/external_acl/time_quota/required.m4 \
-	$(top_srcdir)/helpers/external_acl/unix_group/required.m4 \
-	$(top_srcdir)/helpers/external_acl/wbinfo_group/required.m4 \
-	$(top_srcdir)/helpers/url_rewrite/modules.m4 \
-	$(top_srcdir)/helpers/url_rewrite/fake/required.m4 \
-	$(top_srcdir)/helpers/url_rewrite/LFS/required.m4 \
-	$(top_srcdir)/helpers/storeid_rewrite/modules.m4 \
-	$(top_srcdir)/helpers/storeid_rewrite/file/required.m4 \
+	$(top_srcdir)/src/auth/basic/helpers.m4 \
+	$(top_srcdir)/src/auth/basic/DB/required.m4 \
+	$(top_srcdir)/src/auth/basic/LDAP/required.m4 \
+	$(top_srcdir)/src/auth/basic/NCSA/required.m4 \
+	$(top_srcdir)/src/auth/basic/NIS/required.m4 \
+	$(top_srcdir)/src/auth/basic/PAM/required.m4 \
+	$(top_srcdir)/src/auth/basic/POP3/required.m4 \
+	$(top_srcdir)/src/auth/basic/RADIUS/required.m4 \
+	$(top_srcdir)/src/auth/basic/SASL/required.m4 \
+	$(top_srcdir)/src/auth/basic/SMB/required.m4 \
+	$(top_srcdir)/src/auth/basic/SMB_LM/required.m4 \
+	$(top_srcdir)/src/auth/basic/SSPI/required.m4 \
+	$(top_srcdir)/src/auth/basic/fake/required.m4 \
+	$(top_srcdir)/src/auth/basic/getpwnam/required.m4 \
+	$(top_srcdir)/src/auth/digest/helpers.m4 \
+	$(top_srcdir)/src/auth/digest/eDirectory/required.m4 \
+	$(top_srcdir)/src/auth/digest/file/required.m4 \
+	$(top_srcdir)/src/auth/digest/LDAP/required.m4 \
+	$(top_srcdir)/src/auth/negotiate/helpers.m4 \
+	$(top_srcdir)/src/auth/negotiate/SSPI/required.m4 \
+	$(top_srcdir)/src/auth/negotiate/kerberos/required.m4 \
+	$(top_srcdir)/src/auth/negotiate/wrapper/required.m4 \
+	$(top_srcdir)/src/auth/ntlm/helpers.m4 \
+	$(top_srcdir)/src/auth/ntlm/fake/required.m4 \
+	$(top_srcdir)/src/auth/ntlm/SMB_LM/required.m4 \
+	$(top_srcdir)/src/auth/ntlm/SSPI/required.m4 \
+	$(top_srcdir)/src/log/helpers.m4 \
+	$(top_srcdir)/src/log/DB/required.m4 \
+	$(top_srcdir)/src/log/file/required.m4 \
+	$(top_srcdir)/src/acl/external/helpers.m4 \
+	$(top_srcdir)/src/acl/external/AD_group/required.m4 \
+	$(top_srcdir)/src/acl/external/LDAP_group/required.m4 \
+	$(top_srcdir)/src/acl/external/LM_group/required.m4 \
+	$(top_srcdir)/src/acl/external/delayer/required.m4 \
+	$(top_srcdir)/src/acl/external/SQL_session/required.m4 \
+	$(top_srcdir)/src/acl/external/eDirectory_userip/required.m4 \
+	$(top_srcdir)/src/acl/external/file_userip/required.m4 \
+	$(top_srcdir)/src/acl/external/kerberos_ldap_group/required.m4 \
+	$(top_srcdir)/src/acl/external/session/required.m4 \
+	$(top_srcdir)/src/acl/external/time_quota/required.m4 \
+	$(top_srcdir)/src/acl/external/unix_group/required.m4 \
+	$(top_srcdir)/src/acl/external/wbinfo_group/required.m4 \
+	$(top_srcdir)/src/http/url_rewriters/helpers.m4 \
+	$(top_srcdir)/src/http/url_rewriters/fake/required.m4 \
+	$(top_srcdir)/src/http/url_rewriters/LFS/required.m4 \
+	$(top_srcdir)/src/security/cert_validators/helpers.m4 \
+	$(top_srcdir)/src/security/cert_validators/fake/required.m4 \
+	$(top_srcdir)/src/security/cert_generators/helpers.m4 \
+	$(top_srcdir)/src/security/cert_generators/file/required.m4 \
+	$(top_srcdir)/src/store/id_rewriters/helpers.m4 \
+	$(top_srcdir)/src/store/id_rewriters/file/required.m4 \
 	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
@@ -589,6 +593,8 @@ REPL_LIBS = @REPL_LIBS@
 REPL_OBJS = @REPL_OBJS@
 REPL_POLICIES = @REPL_POLICIES@
 RM = @RM@
+SECURITY_CERTGEN_HELPERS = @SECURITY_CERTGEN_HELPERS@
+SECURITY_CERTV_HELPERS = @SECURITY_CERTV_HELPERS@
 SED = @SED@
 SET_MAKE = @SET_MAKE@
 SH = @SH@
@@ -683,7 +689,7 @@ AM_CPPFLAGS = -I$(top_srcdir) -I$(top_srcdir)/include \
 	$(am__append_1)
 @ENABLE_XPROF_STATS_FALSE@LIBPROFILER = 
 @ENABLE_XPROF_STATS_TRUE@LIBPROFILER = $(top_builddir)/lib/profiler/libprofiler.la
-COMPAT_LIB = $(top_builddir)/compat/libcompat-squid.la $(LIBPROFILER)
+COMPAT_LIB = $(top_builddir)/compat/libcompatsquid.la $(LIBPROFILER)
 subst_perlshell = sed -e 's,[@]PERL[@],$(PERL),g' <$(srcdir)/$@.pl.in >$@ || ($(RM) -f $@ ; exit 1)
 noinst_LTLIBRARIES = libipc.la
 libipc_la_SOURCES = \
